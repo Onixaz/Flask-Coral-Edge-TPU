@@ -17,9 +17,11 @@ label_text_color = (255, 255, 255)
 outputFrame = None
 lock = threading.Lock()
 engine = DetectionEngine(
-    '/home/pi/Fstreamer/tpu/mobilenet_ssd_v2_coco_quant_postprocess_edgetpu.tflite')
+    '/home/pi/Flask-Coral-Edge-TPU
+/tpu/mobilenet_ssd_v2_coco_quant_postprocess_edgetpu.tflite')
 labels = dataset_utils.read_label_file(
-    '/home/pi/Fstreamer/tpu/coco_labels.txt')
+    '/home/pi/Flask-Coral-Edge-TPU
+/tpu/coco_labels.txt')
 
 app = Flask(__name__)
 
